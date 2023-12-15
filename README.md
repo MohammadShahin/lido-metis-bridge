@@ -89,7 +89,11 @@ Metis has added payable in the initiate withdrawal method, which can collect met
         external;
     ```
 
-<!-- **Breaking changes**: -->
+#### L1ERC20TokenBridge
+
+The function `_initiateERC20DepositByChainId` requires having a minimum gas retrieved from the oracle. It also supports discounts. The
+function acts differently if the L1 token is Metis or not (this is to handle Metis being ERC20 on both Ethereum and Metis).
+
 
 #### IL2ERC20Bridge
 
@@ -97,6 +101,10 @@ Metis has added payable in the initiate withdrawal method, which can collect met
 
 1. The function `withdraw` is payable in Metis but it's nonpayable in Optimism. 
 2. The function is `withdrawTo` is payable in Metis but it's nonpayable in Optimism. 
+
+#### L1ERC20TokenBridge
+
+The function `_initiateWithdrawal` requires minimum L1 gas. The function acts differently if the L2 token is Metis. 
 
 #### ICrossDomainMessenger
 
