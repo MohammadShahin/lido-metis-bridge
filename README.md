@@ -17,8 +17,8 @@ This part presents an overview of the solution suggested by Lido. The descriptio
 * BridgingManager - contains administrative methods to retrieve and control the state of the bridging process.
 * BridgeableTokens - contains the logic for validation of tokens used in the bridging process.
 * CrossDomainEnabled - helper contract for contracts performing cross-domain communications
-* L1ERC20TokenBridge - Ethereum's counterpart of the bridge to bridge registered ERC20 compatible tokens between Ethereum and Optimism chains.
-* L2ERC20TokenBridge - Optimism's counterpart of the bridge to bridge registered ERC20 compatible tokens between Ethereum and Optimism chains
+* L1ERC20TokenBridge - Ethereum's counterpart of the bridge to bridge registered ERC20 compatible tokens between Ethereum and Metis chains.
+* L2ERC20TokenBridge - Metis' counterpart of the bridge to bridge registered ERC20 compatible tokens between Ethereum and Metis chains
 * ERC20Bridged - an implementation of the ERC20 token with administrative methods to mint and burn tokens.
 * OssifiableProxy - the ERC1967 proxy with extra admin functionality.
 
